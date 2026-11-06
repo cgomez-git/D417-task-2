@@ -1,0 +1,103 @@
+
+SET UP
+
+!
+!
+
+
+
+
+
+
+
+
+  
+!
+!
+
+
+
+TERRAFORM CONFIG 
+step 5:
+
+provider "aws" {
+    region = "us-west-2"
+}
+
+data "aws_caller_identity" "current" {}
+
+output "account_id" {
+    value = data.aws_caller_identity.current.account_id
+}
+
+step 8:
+
+!
+!
+
+
+
+
+
+
+
+
+  
+!
+!
+
+step 9:
+
+export | grep AWS
+
+step 10:
+
+aws ec2 describe-vpcs | jq '
+.Vpcs[]
+| select(.Tags[]? | (.Key == "Name" and .Value == "cloudacademylabs"))
+| {
+      VpcId,
+      CidrBlock,
+      State,
+   }
+'
+
+step 11:
+
+aws ec2 describe-key-pairs --query "KeyPairs[*].KeyName" --output text
+
+step 12:
+
+terraform init
+
+step 13:
+
+terraform plan
+
+  
+
+PASSLIB SETUP FOR ANSIBLE PASSWORD HASHING 
+step 1:
+
+sudo apt update
+
+step 2: Install the virtual environment module
+
+sudo apt install python3.12-venv --fix-missing
+
+step 3: set the current directory as a virtual environment
+
+python3 -m venv .
+
+step 4: Activate the virtual environment
+
+sources ./bin/activate
+
+step 5: Upgrade pip
+
+python3 -m pip install --upgrade pip
+
+step 6: Install the Passlib module
+
+python3 -m pip install passlib
+
