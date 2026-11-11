@@ -1,3 +1,9 @@
+AWS login:
+
+https://526865897500.signin.aws.amazon.com/console?region=us-west-2
+526865897500
+student
+awbLK1BYg9_dCs
 
 SET UP
 
