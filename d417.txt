@@ -1,20 +1,19 @@
 
 SET UP
 
-!
-!
+SSH setup:
+# Note: Create asymmetric key pair for SSH so Ansible can access the EC2 instance
+# In the terminal use the command:  ssh-keygen -t rsa -b 2048 -f ~/.ssh/your_key_name
 
-
-
-
-
-
-
-
-  
-!
-!
-
+AWS key setup:
+# Note: The AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY values are specific to your lab provided AWS account.
+# On the development system:
+# Set the variables in your terminal session.
+# Establish AWS environment variables for authentication. In the terminal, execute the following commands (without the #):
+# {
+#  export AWS_ACCESS_KEY_ID="YOUR AWS ACCESS KEY as provided by the Lab"
+#  export AWS_SECRET_ACCESS_KEY="YOUR AWS SECRET ACCESS KEY as provided by the lab"
+# }
 
 
 TERRAFORM CONFIG 
@@ -32,19 +31,10 @@ output "account_id" {
 
 step 8:
 
-!
-!
-
-
-
-
-
-
-
-
-  
-!
-!
+{
+export AWS_ACCESS_KEY_ID="AKIAXVK5HTAOAAXWKXVG"
+export AWS_SECRET_ACCESS_KEY="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"
+}
 
 step 9:
 
