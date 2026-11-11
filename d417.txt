@@ -1,3 +1,15 @@
+GitLab login
+
+git@gitlab.com:wgu-gitlab-environment/student-repos/cgomez60/d417-network-automation-and-deployment.git
+
+
+glpat-Sj5QI8n7QN3_BTNJai9Jc2M6MQpvOjEKdTpqaGtqaA8.01.170nf5jq0
+
+
+glpat-Sj5QI8n7QN3_BTNJai9Jc2M6MQpvOjEKdTpqaGtqaA8.01.170nf5jq0
+
+https://gitlab.com/wgu-gitlab-environment/student-repos/cgomez60/d417-network-automation-and-deployment.git
+
 AWS login:
 
 https://526865897500.signin.aws.amazon.com/console?region=us-west-2
@@ -61,6 +73,8 @@ aws ec2 describe-vpcs | jq '
 step 11:
 
 aws ec2 describe-key-pairs --query "KeyPairs[*].KeyName" --output text
+
+https://labs-key-pairs.platform.qa.com/aws-keypairs/526865897500.pem
 
 step 12:
 
