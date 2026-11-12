@@ -12,26 +12,17 @@ https://gitlab.com/wgu-gitlab-environment/student-repos/cgomez60/d417-network-au
 
 AWS login:
 
-https://890149294771.signin.aws.amazon.com/console?region=us-west-2
-890149294771
+https://398804314329.signin.aws.amazon.com/console?region=us-west-2
+
+398804314329
 student
-3vkBF_74hBQ8WQ
+RM2WGyJl_Is_6m
 
 SET UP
 
 SSH setup:
 # Note: Create asymmetric key pair for SSH so Ansible can access the EC2 instance
 # In the terminal use the command:  ssh-keygen -t rsa -b 2048 -f ~/.ssh/id_rsa
-
-AWS key setup:
-# Note: The AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY values are specific to your lab provided AWS account.
-# On the development system:
-# Set the variables in your terminal session.
-# Establish AWS environment variables for authentication. In the terminal, execute the following commands (without the #):
-# {
-#  export AWS_ACCESS_KEY_ID="YOUR AWS ACCESS KEY as provided by the Lab"
-#  export AWS_SECRET_ACCESS_KEY="YOUR AWS SECRET ACCESS KEY as provided by the lab"
-# }
 
 
 TERRAFORM CONFIG 
@@ -50,8 +41,8 @@ output "account_id" {
 step 8:
 
 {
-export AWS_ACCESS_KEY_ID="AKIA46QIIKKZ5MG4DTNL"
-export AWS_SECRET_ACCESS_KEY="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"
+export AWS_ACCESS_KEY_ID="AKIAVZWUW5DMSNYI76ZY"
+export AWS_SECRET_ACCESS_KEY="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"
 }
 
 step 9:
