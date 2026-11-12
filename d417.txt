@@ -13,15 +13,15 @@ https://gitlab.com/wgu-gitlab-environment/student-repos/cgomez60/d417-network-au
 AWS login:
 
 https://526865897500.signin.aws.amazon.com/console?region=us-west-2
-526865897500
+884855443318
 student
-awbLK1BYg9_dCs
+_SdnCGfdAbFo93
 
 SET UP
 
 SSH setup:
 # Note: Create asymmetric key pair for SSH so Ansible can access the EC2 instance
-# In the terminal use the command:  ssh-keygen -t rsa -b 2048 -f ~/.ssh/your_key_name
+# In the terminal use the command:  ssh-keygen -t rsa -b 2048 -f ~/.ssh/id_rsa
 
 AWS key setup:
 # Note: The AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY values are specific to your lab provided AWS account.
@@ -50,8 +50,8 @@ output "account_id" {
 step 8:
 
 {
-export AWS_ACCESS_KEY_ID="AKIAXVK5HTAOAAXWKXVG"
-export AWS_SECRET_ACCESS_KEY="FPBnLVtjiINJfr0VlwJw8ngu2t7MEG2uyti4Mzpe"
+export AWS_ACCESS_KEY_ID="AKIA44BL6R53OPT7U5LY"
+export AWS_SECRET_ACCESS_KEY="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"
 }
 
 step 9:
@@ -83,31 +83,3 @@ terraform init
 step 13:
 
 terraform plan
-
-  
-
-PASSLIB SETUP FOR ANSIBLE PASSWORD HASHING 
-step 1:
-
-sudo apt update
-
-step 2: Install the virtual environment module
-
-sudo apt install python3.12-venv --fix-missing
-
-step 3: set the current directory as a virtual environment
-
-python3 -m venv .
-
-step 4: Activate the virtual environment
-
-sources ./bin/activate
-
-step 5: Upgrade pip
-
-python3 -m pip install --upgrade pip
-
-step 6: Install the Passlib module
-
-python3 -m pip install passlib
-
