@@ -1,21 +1,8 @@
-GitLab login
 
-git@gitlab.com:wgu-gitlab-environment/student-repos/cgomez60/d417-network-automation-and-deployment.git
-
-
-glpat-Sj5QI8n7QN3_BTNJai9Jc2M6MQpvOjEKdTpqaGtqaA8.01.170nf5jq0
-
-
-glpat-Sj5QI8n7QN3_BTNJai9Jc2M6MQpvOjEKdTpqaGtqaA8.01.170nf5jq0
-
-https://gitlab.com/wgu-gitlab-environment/student-repos/cgomez60/d417-network-automation-and-deployment.git
 
 AWS login:
 
-https://679008624790.signin.aws.amazon.com/console?region=us-west-2
-679008624790
-student
-O8p02j8Mhmk__t
+
 
 SET UP
 
@@ -40,8 +27,8 @@ output "account_id" {
 step 8:
 
 {
-export AWS_ACCESS_KEY_ID="AKIAZ4GARMCLEVTOEGF4"
-export AWS_SECRET_ACCESS_KEY="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"
+export AWS_ACCESS_KEY_ID=""
+export AWS_SECRET_ACCESS_KEY=""
 }
 
 step 9:
