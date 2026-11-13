@@ -1,0 +1,17 @@
+---
+- name: Create a user account in each AWS server instance
+  hosts: 
+   - ubuntu_srv
+   - redhat_srv
+  become: true
+  vars:
+    gather_facts: true
+
+  tasks:
+   - name: Add user account
+     ansible.builtin.user:
+       name: AdminWGU
+       state: present
+       password: "{{'WGU123' | password_hash('sha512')}}"
+       group: root
+       append: true
