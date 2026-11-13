@@ -12,11 +12,10 @@ https://gitlab.com/wgu-gitlab-environment/student-repos/cgomez60/d417-network-au
 
 AWS login:
 
-https://398804314329.signin.aws.amazon.com/console?region=us-west-2
-
-398804314329
+https://679008624790.signin.aws.amazon.com/console?region=us-west-2
+679008624790
 student
-RM2WGyJl_Is_6m
+O8p02j8Mhmk__t
 
 SET UP
 
@@ -41,8 +40,8 @@ output "account_id" {
 step 8:
 
 {
-export AWS_ACCESS_KEY_ID="AKIAVZWUW5DMSNYI76ZY"
-export AWS_SECRET_ACCESS_KEY="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"
+export AWS_ACCESS_KEY_ID="AKIAZ4GARMCLEVTOEGF4"
+export AWS_SECRET_ACCESS_KEY="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"
 }
 
 step 9:
